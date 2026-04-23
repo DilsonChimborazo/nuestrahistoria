@@ -4,39 +4,11 @@ import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import Card from "../../components/Card";
 import Modal from "../../components/Modal";
+import eventos from "./eventos";
 
 export default function Timeline() {
 
   const [modal, setModal] = useState(null);
-
-  const eventos = [
-    {
-      titulo: "Cuando nos conocimos",
-      contenido: "Ese día cambió todo 💖",
-      imagen: "/img1.jpeg"
-    },
-    {
-      titulo: "Villa Garzón",
-      contenido: "Un recuerdo hermoso juntos 🌄",
-      imagen: "/img2.jpeg"
-    },
-    {
-      titulo: "79 meses juntos",
-      contenido: "Y seguimos sumando ❤️"
-    },
-    {
-      titulo: "79 meses juntos",
-      contenido: "Y seguimos sumando ❤️"
-    },
-    {
-      titulo: "79 meses juntos",
-      contenido: "Y seguimos sumando ❤️"
-    },
-    {
-      titulo: "79 meses juntos",
-      contenido: "Y seguimos sumando ❤️"
-    }
-  ];
 
   return (
     <div>
@@ -47,13 +19,14 @@ export default function Timeline() {
             key={i}
             imagen={e.imagen}
             titulo={e.titulo}
-            onClick={() => setModal(e.contenido)}
+            onClick={() => setModal(e)}
           />
         ))}
 
         <Modal
           visible={modal !== null}
-          contenido={modal}
+          contenido={modal?.contenido}
+          imagen={modal?.imagen}
           onClose={() => setModal(null)}
         />
       </div>
