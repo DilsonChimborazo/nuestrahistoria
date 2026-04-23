@@ -14,9 +14,7 @@ export default function Modal({ visible, onClose, contenido, imagen }) {
         >
           ✕
         </button>
-
         <div className="flex flex-col md:flex-row items-center gap-6">
-
           {imagen && (
             <img
               className="rounded-2xl w-full md:w-1/2 max-h-[300px] object-cover hover:scale-105 transition-transform duration-300"
@@ -24,6 +22,8 @@ export default function Modal({ visible, onClose, contenido, imagen }) {
               alt="Imagen del modal"
             />
           )}
+
+
 
           <p className="text-gray-800 text-center md:text-left break-words">
             {contenido}
