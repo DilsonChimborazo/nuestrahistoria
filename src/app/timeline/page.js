@@ -12,7 +12,7 @@ export default function Timeline() {
   const [modal, setModal] = useState(null);
   const [busqueda, setBusqueda] = useState("");
 
-  // 🔍 Filtrar eventos
+
   const eventosFiltrados = eventos.filter((e) =>
     `${e.fecha ?? ""} ${e.titulo ?? ""}`
       .toLowerCase()
