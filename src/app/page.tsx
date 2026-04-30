@@ -118,7 +118,7 @@ export default function Home() {
           </button>
           <div className="
             absolute 
-            bottom-40 left-1/2 -translate-x-1/2
+            bottom-10 left-1/2 -translate-x-1/2
             w-full px-6 text-center
             md:top-1/2 md:-translate-y-1/2 
             md:left-auto md:translate-x-0 
