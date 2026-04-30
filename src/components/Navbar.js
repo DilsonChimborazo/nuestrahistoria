@@ -1,13 +1,26 @@
-"use client"
+"use client";
 
-import Link from "next/link"
+import Link from "next/link";
 
-export default function Navbar () {
-    return(
-        <nav className="flex gap-10 p-10 bg-black/30">
-            <Link href="/" className="hover:bg-pink-500 rounded-full px-3">Inicio</Link>
-            <Link href="/timeline" className="hover:bg-pink-500 rounded-full px-3">Historia</Link>
-            <Link href="/carta" className="hover:bg-pink-500 rounded-full px-3">Carta</Link>
-        </nav>
-    ); 
+export default function Navbar() {
+  return (
+    <nav className="
+      flex justify-center gap-10 p-5 
+      bg-black/20 backdrop-blur-md
+      border-b border-white/10
+      sticky top-0 z-50
+    ">
+      <Link href="/" className="text-white/70 hover:text-white transition">
+        Inicio
+      </Link>
+
+      <Link href="/timeline" className="text-white/70 hover:text-white transition">
+        Historia
+      </Link>
+
+      <Link href="/carta" className="text-white/70 hover:text-white transition">
+        Carta 💖
+      </Link>
+    </nav>
+  );
 }
