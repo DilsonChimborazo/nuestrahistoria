@@ -58,7 +58,7 @@ export default function Home() {
     "Contigo descubrí que el amor también es luchar juntos por nuestros sueños 💫",
     "Eres la mujer más hermosa por dentro y por fuera que he conocido 💕",
     "Gracias por cada momento, por cada risa, por cada abrazo que me das 💖",
-    "Eres mi compañera de vida, mi confidente y mi mejor amiga 👯‍♀️❤️",
+    "Eres mi compañera de vida, mi confidente y mi mejor amiga ❤️",
     "Contigo aprendí que el amor también es perdonar y volver a elegirnos cada día 💫",
     "Eres la razón por la que mi corazón late más fuerte cada día 💓❤️",
     "Gracias por estar a mi lado en los días buenos y en los no tan buenos 💖",
@@ -113,7 +113,7 @@ export default function Home() {
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent animate-shine"></span>
 
             <span className="relative z-10">
-              Oprime cuando lo necesites 💜
+              Oprime cuando lo necesites ❤️‍🩹​
             </span>
           </button>
           <div className="

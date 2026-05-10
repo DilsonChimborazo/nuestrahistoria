@@ -19,7 +19,7 @@ export default function Navbar() {
       </Link>
 
       <Link href="/carta" className="text-white/70 hover:text-white transition">
-        Carta 💖
+        Carta​
       </Link>
     </nav>
   );

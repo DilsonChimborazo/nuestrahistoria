@@ -1,6 +1,6 @@
 "use client";
 
-export default function Modal({ visible, onClose, contenido, imagen }) {
+export default function Modal({ visible, onClose,titulo, contenido, imagen }) {
   if (!visible) return null;
 
   return (
@@ -24,6 +24,9 @@ export default function Modal({ visible, onClose, contenido, imagen }) {
           ✕
         </button>
         <div className="flex flex-col md:flex-row items-center gap-6">
+          <p className="text-white/80 text-center md:text-left">
+            {titulo}
+          </p>
           {imagen && (
             <img
               className="rounded-2xl w-full md:w-1/2 max-h-[300px] object-cover"
