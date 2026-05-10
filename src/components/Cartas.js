@@ -139,17 +139,6 @@ export default function Carta() {
                 "
               >
                 <div className="flex items-center gap-4">
-                  <div
-                    className="
-                      w-14 h-14
-                      rounded-2xl
-                      bg-fuchsia-500/20
-                      flex items-center justify-center
-                    "
-                  >
-                    <Sparkles className="text-fuchsia-300" />
-                  </div>
-
                   <div>
                     <p className="text-white/40 text-sm uppercase tracking-[4px]">
                       Carta del corazón
@@ -160,8 +149,6 @@ export default function Carta() {
                     </h2>
                   </div>
                 </div>
-
-                <Stars className="text-cyan-300" />
               </div>
               <div
                 className="
@@ -379,7 +366,7 @@ export default function Carta() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8">
-                  <h3 className="text-4xl md:text-6xl font-black leading-tight">
+                  <h3 className="text-2xl md:text-6xl font-black leading-tight">
                     Mi lugar favorito siempre será con ustedes ❤️‍🩹​🩵​
                   </h3>
                 </div>
