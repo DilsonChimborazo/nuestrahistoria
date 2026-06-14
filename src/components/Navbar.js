@@ -21,6 +21,10 @@ export default function Navbar() {
       <Link href="/carta" className="text-white/70 hover:text-white transition">
         Carta​
       </Link>
+
+      <Link href="/razones" className="text-white/70 hover:text-white transition">
+        Razones
+      </Link>
     </nav>
   );
 }

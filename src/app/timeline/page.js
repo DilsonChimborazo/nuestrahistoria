@@ -155,9 +155,9 @@ export default function Timeline() {
                     Hoy ❤️
                   </span>
                 </div>
-                <p className="text-white/40 text-xl">
-                  {recuerdoHoy.fecha}
-                </p>
+                  <p className="text-white/40 text-xl">
+                    {new Date().toLocaleDateString("es-CO")}
+                  </p>
               </div>
               <div className="relative z-10 mt-8">
                 <p
@@ -218,7 +218,7 @@ export default function Timeline() {
                     transition-all duration-300
                   "
                 >
-                  Ver recuerdo de hoy
+                  Ver ultimo recuerdo
 
                   <ArrowRight size={18} />
                 </button>
