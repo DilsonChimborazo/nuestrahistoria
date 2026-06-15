@@ -4,7 +4,7 @@ export const razones = [
   "Porque me entiendes incluso cuando no hablo ❤️‍🩹",
   "Porque tus abrazos son mi lugar favorito ❤️‍🩹",
   "Porque contigo me siento en paz ❤️‍🩹",
-  "Porque siempre encuentras la forma de hacerme reír ❤️‍🩹",
+  "Porque siempre encuentras la forma de darme tranquilidad ❤️‍🩹",
   "Porque me apoyas en mis sueños ❤️‍🩹",
   "Porque haces especiales los días normales ❤️‍🩹",
   "Porque me inspiras a ser mejor ❤️‍🩹",
@@ -94,5 +94,5 @@ export const razones = [
   "Porque haces que mi corazón se quede contigo ❤️‍🩹",
   "Porque volvería a conocerte una y mil veces ❤️‍🩹",
 
-  "Porque me apoyaste y me dejaste solo 😒"
+  "Porque me apoyaste cuando más lo necesitaba y me dejaste solo cuando todo fue mejor 😒"
 ];
