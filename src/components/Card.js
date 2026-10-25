@@ -16,7 +16,7 @@ export default function Card({ titulo, onClick, imagen, fecha }) {
         hover:bg-white/10
       "
     >
-      <p className="text-center text-xs text-purple-300/70 mb-2 tracking-wider">
+      <p className="text-center text-xs font-mono text-zinc-500 mb-2 tracking-wider">
         {fecha}
       </p>
 

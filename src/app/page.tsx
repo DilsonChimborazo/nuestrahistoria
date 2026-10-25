@@ -77,8 +77,8 @@ export default function Home() {
       className="w-full min-h-screen relative bg-center bg-cover overflow-hidden"
       style={{ backgroundImage: "url('/img1.jpeg')" }}
     >
-      <div className="absolute inset-0 bg-black/70"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
+      <div className="absolute inset-0 bg-black/75"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/30 to-black/90"></div>
 
       <div className="relative z-10 flex flex-col min-h-screen">
 
@@ -86,34 +86,31 @@ export default function Home() {
 
         <div className="flex flex-col justify-center flex-1 px-6 md:px-20 text-white max-w-3xl">
 
-          <p className="tracking-[0.3em] text-sm text-white/60 mb-4">
+          <p className="tracking-[0.3em] text-sm text-white/50 mb-4">
             NUESTRA HISTORIA
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#d4d4d8]">
             AMOR
           </h1>
 
-          <p className="mt-6 text-white/70 max-w-md leading-relaxed">
-            No es solo una historia...  
+          <p className="mt-6 text-white/50 max-w-md leading-relaxed">
+            No es solo una historia...
             es todo lo que hemos sido, somos y seremos 💫
           </p>
           <button
             onClick={generarFrase}
             className="
-              mt-10 relative w-fit px-8 py-3 
-              border border-white/20 rounded-full
-              text-white/80
-              overflow-hidden
-              transition-all duration-500
-              hover:text-white hover:border-white/40
-              hover:scale-105
+              mt-10 relative w-fit px-8 py-3.5
+              border border-[#252528] rounded-full
+              bg-[#0d0d10]/85 hover:bg-[#121215]/90
+              text-[#a1a1aa] hover:text-[#d4d4d8]
+              transition-colors duration-300
+              cursor-pointer
             "
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent animate-shine"></span>
-
-            <span className="relative z-10">
-              Oprime cuando lo necesites ❤️‍🩹​
+            <span>
+              Oprime cuando lo necesites ❤️‍🩹
             </span>
           </button>
           <div className="
@@ -128,7 +125,7 @@ export default function Home() {
             {frase && (
               <p className="
                 text-xl sm:text-2xl md:text-3xl lg:text-4xl
-                text-white/70
+                text-white/55
                 italic
                 leading-relaxed
                 tracking-wide

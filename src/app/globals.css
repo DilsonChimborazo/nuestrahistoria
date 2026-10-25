@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0f;   
-  --foreground: #e5e5e5;  
+  /* ── Paleta mate profesional ── */
+  --bg-base:      #0d0d10;   /* fondo principal */
+  --bg-surface:   #121215;   /* tarjetas / paneles */
+  --bg-elevated:  #161619;   /* superficies elevadas */
+  --border:       #252528;   /* bordes mate */
+  --text-primary: #d4d4d8;   /* texto principal */
+  --text-muted:   #71717a;   /* texto secundario */
+  --text-faint:   #52525b;   /* texto muy suave */
+
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
 }
 
 @theme inline {
@@ -12,17 +21,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0f;
-    --foreground: #e5e5e5;
+    --background: var(--bg-base);
+    --foreground: var(--text-primary);
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg-base);
+  color: var(--text-primary);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
@@ -89,3 +97,105 @@ body {
 .animate-fadeRight {
   animation: fadeRight 0.8s ease forwards;
 }
+
+/* 3D Book & Album Styles */
+.perspective-book {
+  perspective: 2500px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.origin-left-center {
+  transform-origin: left center;
+}
+
+.origin-right-center {
+  transform-origin: right center;
+}
+
+@keyframes petalFall {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) translateX(0) rotate(0deg) scale(0.8);
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(105vh) translateX(120px) rotate(360deg) scale(1);
+  }
+}
+
+.animate-petal {
+  animation: petalFall linear infinite;
+}
+
+@keyframes heartFloatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-50px) scale(1.1) rotate(15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(1.3) rotate(-15deg);
+  }
+}
+
+.animate-heart-float {
+  animation: heartFloatUp 1.2s ease-out forwards;
+}
+
+/* Dark Matte Album Paper */
+.paper-dark-left {
+  background: var(--bg-surface);
+}
+
+.paper-dark-right {
+  background: var(--bg-elevated);
+}
+
+.paper-dark-single {
+  background: var(--bg-surface);
+}
+
+/* Scrollbar sutil mate */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+

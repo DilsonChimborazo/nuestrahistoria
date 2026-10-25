@@ -12,12 +12,6 @@
       fecha: "01/01/2018"
     },
     {
-      titulo: "Nuestra sesion de Fotos",
-      contenido: "Te acuerdas de esa sesion de fotos amor? fue en palestina con un amigo que estaba empezando en la fotografia, en ese dia fue muy hermoso todo eso todas las fotos todo lo que hicimos fue magico para mi, y obvio como olvidar despues de que llegamos a tu casa la pelea con tu mama jajajajjaja, nunca voy a superar eso, fue un dia hermoso porque ademas de todo eso pudimos compartir un momento magico juntos 🥹❤️",
-      imagen: "/img6.jpeg",
-      fecha: "04/11/2018"
-    },
-    {
       titulo: "Nos salimos a vivir juntos",
       contenido: "Ese dia nos marco a juntos, me acuerdo que ese dia sali de jugar futbol y tu estabas conmigo despues de eso fuimos a comer y luego fuimos a mi casa, yo no queria que te fueras y te dije que si querias vivir conmigo, me dijiste que si porque en tu casa estaban molestando mucho y que no te dejaban ser libre jajajjajajajaj, que gran idea tuvimos ese dia sin saber todo lo que se nos venia encima, pero aun asi lo hicimos y no nos arrepentimos de nada",
       imagen: "/img8.jpeg",
@@ -48,25 +42,104 @@
       fecha: "26/08/2020"
     },
     {
-      titulo: "Primera hizada de bandera de nuestro hijo",
-      contenido: "ese dia fue muy especial para nosotros, ver a nuestro hijo tan feliz y orgulloso de su bandera fue algo que nunca olvidare, en especial porque queria estar con el en ese momento, felicitarlo abrazarlo y decirle lo mucho que lo amo y lo mucho que me siento orgullo de el, ese dia recorde los momentos que he pasado con el y todo lo que hemos logrado como familia🥹❤️",
-      imagen: "/img5.jpeg",
-      fecha: "23/04/2026"
+      titulo: "tercer Aniversario",
+      contenido: "Para este tercer año fue nuestra primera vez en peregollos siendo 3, fue muy especial porque eramos 3 los que ibamos a celebrar nuestro amor, ese dia me di cuenta de lo mucho que habiamos crecido como pareja y como familia, gracias por siempre estar conmigo🥹❤️",
+      imagen: "/img15.jpeg",
+      fecha: "01/01/2021"
     },
     {
-      titulo: "Dia de la madre",
-      contenido: `En esta historia quiero que sepas lo orgulloso que estoy de ti como mamá. A veces siento que las palabras no alcanzan para decirte todo lo que realmente admiro de ti, porque yo he visto cosas que quizás muchas personas no ven. He visto lo difícil que ha sido para ti seguir adelante aun cuando sentías que estabas sola, aun cuando no tenías el apoyo que merecías, aun cuando te tocó guardar lágrimas y cansancio para seguir sonriendo por nuestro hijo. Y aun así, nunca dejaste de hacer las cosas con amor.
-      Eso es lo que más admiro de ti… la forma tan bonita en la que amas a nuestro hijo. Porque ser mamá no es solo estar, es entregar el corazón todos los días, incluso cuando nadie pregunta cómo te sientes tú. Y tú lo haces. Lo haces en cada desvelo, en cada preocupación, en cada abrazo, en cada palabra bonita que le das, en cada esfuerzo silencioso que haces para verlo feliz.
-      Nunca olvides esto: eres una gran mamá. De verdad lo eres. Y aunque tú a veces sientas que tienes errores, aunque a veces dudes de ti misma o sientas que pudiste hacer más, para mí y para nuestro hijo eres perfecta. Perfecta no porque no te equivoques, sino porque amas de una manera tan sincera y tan real, que eso vale más que cualquier cosa en este mundo.
-      Desde que nació nuestro hijo, este es el primer año en el que no estoy contigo en esta fecha tan especial, y créeme que eso me duele más de lo que puedes imaginar. Porque si hay alguien que merece sentirse acompañada, valorada y abrazada hoy, eres tú. Pero aun en la distancia necesitaba decirte esto, necesitaba que supieras que jamás voy a olvidar todo lo que has hecho, todo lo que has luchado y todo el amor tan inmenso que le das a nuestro hijo.
-      Quiero que siempre recuerdes que él va a crecer sintiéndose orgulloso de la mamá que tiene. Va a crecer recordando a una mujer fuerte, amorosa, valiente y capaz de darlo todo por él. Y así como él se sentirá orgulloso de ti, yo también lo estoy. Muchísimo. Porque de todas las personas del mundo, eres tú la mamá de mi hijo, y eso siempre será algo muy especial para mí.
-      Gracias por cada esfuerzo, por cada momento, por cada sacrificio silencioso que haces sin esperar nada a cambio. Gracias por amar a nuestro hijo de la manera tan bonita en la que lo haces. Y aunque a veces la vida se ponga difícil, nunca dudes del gran corazón que tienes ni de la increíble mamá que eres.
-      Feliz día a la mejor mamá que pudo tener nuestro hijo.🥹`,
-      imagen: "/img13.jpeg",
-      fecha: "10/05/2026"
+      titulo: "Cumpleaños #1 de nuestro hijo",
+      contenido: "Ya habia pasado un año desde que habia llegado nuestro hijo a este mundo, y llego el momento de celebrarle su primer añito, no fue la gran fiesta pero fue una fiesta llena de amor y alegria, estuvieron los primos comio mucho y se ensucio mucho, al final lo que queriamos era que fuera feliz y lo fue.🥹",
+      imagen: "/img19.jpeg",
+      fecha: "26/08/2021"
     },
-
-
+    {
+      titulo: "Cuarto Aniversario",
+      contenido: "Ya eran 4 años los que estabamos juntos, nunca lo imaginamos y miranos ahora 4 años y seguimos juntos, este año fue muy especial porque estabamos en una etapa muy bonita de nuestras vidas, senti que todo fluia bien a pesar de que seguimos teniendo nuestros problemas pero todo fue diferente este año despues de todo nuestro hijo si llego para cambiar las cosas por completo(para bien), ahora eramos 3 y eramos mas felices que nunca.🥹❤️",
+      imagen: "/img16.jpeg",
+      fecha: "01/01/2022"
+    },
+    {
+      titulo: "Una Vida en Villa Garzon",
+      contenido: `Un nuevo comienzo en Villa Garzón, ese año pasó algo muy importante en nuestras vidas. Aunque vivimos momentos difíciles, no fue un mal año, porque aprendimos muchas cosas, y una de las más importantes fue entender que nos teníamos los unos a los otros y que, si queríamos salir adelante, teníamos que hacerlo juntos.
+      Mi hermano Alex estaba trabajando en Villa Garzón, en la ladrillera de don Mario. Yo trabajaba en Ceycro, en la sección de hornos, pasando todos los días largas jornadas dentro de aquellas cámaras que superaban los 40 grados, incluso cuando estaban vacías. Estaba tan aburrido de ese trabajo que, cuando mi hermano me ofreció el puesto de jefe del grupo de hornos en Villa Garzón, no lo pensé dos veces y acepté.
+      Ella también estaba pasando por un momento en el que quería cambiar de ambiente, dejar atrás la rutina y comenzar de nuevo. Así que tomamos una decisión que cambiaría nuestras vidas: irnos de Pitalito para construir una nueva vida los tres en Villa Garzón.
+      Ese tiempo fue muy bonito para nosotros. Ella comenzó a trabajar en el área de restaurante, y le iba muy bien. Siempre se había caracterizado por ser una persona amable, por llevarse bien con los demás y por ganarse el cariño de las personas con su forma de ser.
+      En aquel entonces no teníamos muchas cosas, pero éramos felices con lo poco que teníamos. Estábamos construyendo nuestra propia historia, lejos de lo conocido, intentando salir adelante y disfrutando de esa etapa en la que, a pesar de las dificultades, sentíamos que todo podía mejorar.
+      Pero, con el tiempo, las cosas comenzaron a cambiar.
+      Aunque vivíamos tranquilos, el niño empezó a enfermarse. Su estado de salud fue empeorando hasta llegar a un punto en el que estuvo muy grave. Yo también comencé a tener problemas de salud y la situación se volvió cada vez más complicada. En ese momento, ella era la única que estaba trabajando y no había otra forma de conseguir el dinero que necesitábamos para los medicamentos y todo lo necesario para que el niño se recuperara.
+      Fue entonces cuando comencé a verla como una heroína. A pesar de las dificultades, del cansancio y de la preocupación, siguió adelante. Hizo todo lo que estuvo a su alcance para sostener a nuestra familia en uno de los momentos más difíciles que habíamos vivido.
+      Mientras tanto, yo sentía que les estaba fallando como padre y como esposo. Me dolía no poder estar bien, no poder responder como quería y sentir que, en lugar de ser quien ayudara a resolver los problemas, también me había convertido en alguien que necesitaba ayuda.
+      Quería que el niño se recuperara, que ella no tuviera que cargar sola con tantas responsabilidades y que pudiéramos volver a vivir tranquilos. Sin embargo, por más que lo intentábamos, las cosas no mejoraban.
+      Llegó un momento en el que ya no pudimos más. El dinero comenzó a faltar, yo seguía enfermo y mi cuerpo empezó a llenarse de brotes que no sabía de dónde venían. Cada día aparecían más y la incertidumbre sobre lo que me estaba pasando aumentaba.
+      Antes de regresar a Pitalito, pasé dos semanas en el hospital. Fueron días difíciles, llenos de preocupación y de incertidumbre. Cuando salí, ya sabíamos que no podíamos continuar viviendo de aquella manera. La situación económica y nuestros problemas de salud nos habían llevado al límite.
+      Así que decidimos regresar a Pitalito.
+      No fue una decisión fácil. Nos habíamos ido con la ilusión de construir una vida diferente, de encontrar nuevas oportunidades y de empezar una etapa que nos permitiera crecer como familia. Volver significaba dejar atrás parte de aquellos sueños y aceptar que las cosas no habían salido como esperábamos.
+      Pero la vida no siempre sigue el camino que imaginamos. A veces, por más ganas que tengamos de salir adelante, las circunstancias nos obligan a detenernos, tomar decisiones difíciles y comenzar de nuevo.
+      Aquel regreso no borró los momentos bonitos que vivimos en Villa Garzón, ni todo lo que aprendimos durante esa etapa. Al contrario, nos dejó recuerdos que todavía merecen ser contados.
+      Aprendimos que la felicidad no depende únicamente de lo que tenemos, que las personas pueden demostrar una fortaleza que ni ellas mismas sabían que poseían y que, en los momentos más difíciles, es cuando realmente comprendemos cuánto somos capaces de hacer por quienes amamos.
+      También aprendimos que sentirse derrotado no significa haber fracasado. A veces, simplemente, llega un momento en el que hay que reconocer que las cosas no están funcionando y buscar otra manera de continuar.
+      Ese año no terminó como lo habíamos imaginado. Nos enfermamos, nos quedamos sin dinero y tuvimos que abandonar una vida que apenas estábamos comenzando a construir. Sin embargo, también fue una etapa en la que estuvimos muy unidos, en la que conocimos nuestros límites y descubrimos que, incluso cuando todo parece complicarse, siempre queda algo por lo que vale la pena seguir intentando.
+      Porque, al final, aquella historia no se trataba solamente de un trabajo, de una ciudad o de las dificultades económicas. Se trataba de tres personas que habían decidido empezar de nuevo, que soñaban con una vida mejor y que, a pesar de no tener todas las respuestas, hicieron lo posible por salir adelante.
+      Y aunque tuvimos que regresar, esa etapa siempre formará parte de nuestra historia. Una historia que no habla de una derrota, sino de lo que significa intentarlo, resistir y aprender que, en ocasiones, volver al punto de partida también es una manera de seguir avanzando.
+      y una cosa mas, nunca olvidaremos aquel dia que solo comimos pasta con sal y color y aun asi fuimos agradecidos por tener algo "SOLO COMIMOS SPAGUETITOS" contigo hemos vidido de todo, lo bueno, lo malo y lo peor, pero siempre juntos`,
+      imagen: "/img17.jpeg",
+      fecha: "01/08/2022"
+    },
+    {
+      titulo:"cumpleaños #2 de nuestro hijo",
+      contenido: "Para este año estabamos ya viviendo en Villa Garzon apenas estabamos llegando estabamos bien, mi familia fue hasta alla solo para acompañarnos en su cumpleaños, esa noche fue muy especial para nosotros como familia, fue una noche llena de alegria, risas y mucho amor, recuerdo que le compramos un burrico a santi y despues yo andaba dañandoselo jajajaja mientras el me peleaba para que me bajara y lo soltara, momentos que siempre estaran en nuestros recuerdos.",
+      imagen:"/img20.jpeg",
+      fecha:"26/08/2022"
+    },
+    {
+      titulo:"Quinto aniversario",
+      contenido: "En este año fue nuestro quinto aniversario, este año nuestro hijo fue mas conciente que ibamos donde estaban los pescados y el parque de diversiones, apartir de ese año fue el lugar favorito de los 3 y siempre que queriamos hacer algo le preguntabamos a el a donde queriamos ir y siempre queria ir a los pelegoyos y yo y tu estabamos de acuerdo porque nos gustaba ver la felicidad en su carita. adicional a eso eran 5 años que llevabamos juntos y nos habian pasado un par de cosas, pero seguiamos juntos y felices. pero lo que se nos venia el siguiente año iba a demostrarnos que nuestra historia apenas estaba comenzando.",
+      imagen:"/img21.jpeg",
+      fecha:"01/01/2023"
+    },
+    {
+      titulo: "Cumpleaños #3 de nuestro hijo",
+      contenido: "Para este cumpleaños del nene apenas nos habiamos devulto de Villa Garzon estabamos en Pitalito, fue un cumpleaños muy sencillo pero lleno de mucho amor y felicidad, tu preparaste arroz con pollo que te queda riquisimo y compartimos en familia, tu estabas feliz, lo importate no era el regalo si no el tiempo que compartimos juntos y lo felis que lo hicimos sentir, a pesar de que habiamos pasado un momento dificil, estabamos juntos y eso era lo importante para nosotros.",
+      imagen: "/img22.jpeg",
+      fecha: "26/08/2023"
+    },
+    {
+      titulo: "Sexto Aniversario",
+      contenido: "En este año fue nuestro sexto aniversario, este año fue diferente a los demas, porque ya estabamos en Pitalito, estabamos bien, nuestro hijo ya estaba mas grande y podia disfrutar mas de las cosas, en este año nuestro hijo cumplia 4 añitos, fuimos a los pelegoyos como cada uno de los años y el se divirtio mucho, santiago cada vez mas grande ya no se estaba quieto comimos postres y toda la diabetes posible jajajjaajaja habia sido un año dificil y nos mereciamos que este año fuera mejor y efectivamente economicamente de ahi en adelante todo fue mejor no hubo mas plata pero hubieron menos necesidades y eso nos hizo estar bien. ademas que yo apenas habia empezado a estudiar algo que de verdad me gustaba y disfrutaba la vida empezo a ser buena con nosotros de nuevo. ese año fue de muchas bendiciones y lo mas importante estabamos juntos y felices.",
+      imagen: "/img23.jpeg",
+      fecha: "01/01/2024"
+    },
+    {
+      titulo: "Cumpleaños #4 de nuestro hijo",
+      contenido: "Ya habian pasado 4 años, nuestro hijo ya estaba grande y pues ya no se comportaba como un bebe, se volvia un niño y a el le encantaba que lo trataran como un niño, ya no queria que lo cargaran en brazos, queria que lo consintieran y que lo mimaran pero como un niño de 4 años. como siempre ese dia hicimos lo que el queria donde el queria porque si el estaba feliz nosotros eramos felices, en resumen fue un dia muy especial para nosotros como familia.",
+      imagen: "/img24.jpeg",
+      fecha: "26/08/2024"
+    },
+    {
+      titulo: "Sétimo Aniversario",
+      contenido: "Este año fue bueno pasaron cosas buenas y cosas mas buenas teniamos una vida rutinaria, tranquila pero teniamos nuestros dias en familia y eso era lo importante para nosotros. tu te sentias libre economicamente yo estaba siendo el mejor en lo que estaba estudiando las cosas se estaban dando y era perfecto, habian un sacrificio de tras de todo esto y por lo mismo aprovechavamos cada minuto que estabamos los 3.",
+      imagen: "/img25.jpeg",
+      fecha: "01/01/2025"
+    },
+    {
+      titulo: "Cumpleaños #5 de nuestro hijo",
+      contenido: "Este cumpleaños de santiago fue diferente tuvo todo lo de todos los años pero no puede estar cerca de el, a mediados de julio me salio una oportunidad de trabajo en Tocanicipa-Cundinamarca y pues queria aprovecharla y seguir con mi sueño de tener un mejor futuro para los 3, yo entraba a trabajar el 11 de agosto, el 16 de agosto era el matrimonio de mi hermano alex y el 26 el cumpleaños del nene y pues queria acompanarlos a los dos, desde el momento que supe que no podia estar en su cumpleaños me senti muy mal, pero sabia que era por un bien mayor para los 3. desde el día que me entere que me iba a ir para otra ciudad no sabia como decirle al nene fueron 15 días en los que no podia dormir pensando si estaba haciendo bien con esa decision, cuando llego el dia del cumpleaños del nene llegue de trabajar a las 4 pm estando solo llore hasta que el sueño me gano fue una de las primeras sensaciones de dolor que senti por estar lejos de mi hijo. pero el tuvo un buen cumpleaños y en parte eso me hacia sentir mejor.",
+      imagen: "/img26.jpeg",
+      fecha: "26/08/2025"
+    },
+    {
+      titulo: "Octavo Aniversario",
+      contenido: "Este aniversario fue diferente aun seguiamos amandonos pero ya las cosas por la distancia empezaron a cambiar a veces eramos frios y otras veces queriamos el amor que nos dabamos antes, pero lo que si es cierto es que las cosas se ponian mejor economicamente para los dos, por mi parte yo estaba aprendiendo mucho y me sentia realizado porque estaba haciendo lo que me gustaba y por tu parte estabas mas tiempo con nuestro hijo y lo estabas criando de la mejor manera. ademas que tu ya estabas mas suelta de dinero y podias consentir a nuestro hijo como lo merecia. pero lo de nosotros se estaba apagando dia a dia, no habia la misma confianza y las cosas se ponian frias entre los dos. en ese momento no sabias si eso era amor o costumbre y llegamos al punto que siempre dijimos que no llegariamos la poca empatia por el otro nos hizo perdernos. aun asi sabiamos que seguamos teniendonos mucho amor por el otro. ",
+      imagen: "/img27.jpeg",
+      fecha: "01/01/2026"
+    },
+    {
+      titulo: "Cumpleaños #6 de nuestro hijo",
+      contenido: "Este cumpleaños del nene fue igual de dificil que el anterior porque seguiamos separados por la distancia, quince dias antes del su cumpleaños fui a visitarlo en la casa de mis papás le hicimos comida, torta y fuimos a cine fue un gran día pero el dia de su cumpleaños me sentia muy mal por no estar con el, aun asi gracias a ti fue el mejor cumpleaños que ha tenido.",
+      imagen: "/img28.jpeg",
+      fecha: "26/08/2026"
+    }
 
   ];
 

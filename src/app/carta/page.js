@@ -1,14 +1,9 @@
 import Navbar from "../../components/Navbar";
-import Carta from "../../components/Cartas"
+import Carta from "../../components/Cartas";
 
 export default function Page() {
   return (
-    <div
-    className="w-full min-h-screen items-center justify-center bg-center bg-cover"
-    style={{
-      backgroundImage: "url('/img4.jpeg')",
-    }}
-    >
+    <div className="w-full min-h-screen bg-[#0d0d10]">
       <Navbar />
       <Carta />
     </div>

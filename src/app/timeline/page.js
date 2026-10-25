@@ -9,7 +9,6 @@ import {
 
 import Navbar from "../../components/Navbar";
 import Modal from "../../components/Modal";
-
 import eventos from "./eventos";
 
 export default function Timeline() {
@@ -21,58 +20,37 @@ export default function Timeline() {
       .includes(busqueda.toLowerCase())
   );
   const eventosOrdenados = [...eventosFiltrados].sort((a, b) => {
-    const fechaA = new Date(
-      a.fecha.split("/").reverse().join("-")
-    );
-
-    const fechaB = new Date(
-      b.fecha.split("/").reverse().join("-")
-    );
-
+    const fechaA = new Date(a.fecha.split("/").reverse().join("-"));
+    const fechaB = new Date(b.fecha.split("/").reverse().join("-"));
     return fechaB - fechaA;
   });
-  const { recuerdoHoy, recuerdoAnoPasado } =
-    useMemo(() => {
-      const hoy = new Date();
-      const diaHoy = hoy.getDate();
-      const mesHoy = hoy.getMonth() + 1;
-      const anioPasado = hoy.getFullYear() - 1;
-      const hoyEvento = eventosOrdenados.find((e) => {
-        const [dia, mes] = e.fecha.split("/");
 
-        return (
-          Number(dia) === diaHoy &&
-          Number(mes) === mesHoy
-        );
-      });
-      const anoPasadoEvento = eventosOrdenados.find(
-        (e) => {
-          const [dia, mes, anio] =
-            e.fecha.split("/");
-
-          return (
-            Number(dia) === diaHoy &&
-            Number(mes) === mesHoy &&
-            Number(anio) === anioPasado
-          );
-        }
+  const { recuerdoHoy, recuerdoAnoPasado } = useMemo(() => {
+    const hoy = new Date();
+    const diaHoy = hoy.getDate();
+    const mesHoy = hoy.getMonth() + 1;
+    const anioPasado = hoy.getFullYear() - 1;
+    const hoyEvento = eventosOrdenados.find((e) => {
+      const [dia, mes] = e.fecha.split("/");
+      return Number(dia) === diaHoy && Number(mes) === mesHoy;
+    });
+    const anoPasadoEvento = eventosOrdenados.find((e) => {
+      const [dia, mes, anio] = e.fecha.split("/");
+      return (
+        Number(dia) === diaHoy &&
+        Number(mes) === mesHoy &&
+        Number(anio) === anioPasado
       );
+    });
 
-      return {
-        recuerdoHoy:
-          hoyEvento || eventosOrdenados[0],
+    return {
+      recuerdoHoy: hoyEvento || eventosOrdenados[0],
+      recuerdoAnoPasado: anoPasadoEvento
+        ? { ...anoPasadoEvento, etiqueta: "Hace un año ✨" }
+        : { ...eventosOrdenados[1], etiqueta: "Recuerdos recientes 💫" },
+    };
+  }, [eventosOrdenados]);
 
-        recuerdoAnoPasado: anoPasadoEvento
-          ? {
-              ...anoPasadoEvento,
-              etiqueta: "Hace un año ✨",
-            }
-          : {
-              ...eventosOrdenados[1],
-              etiqueta: "Recuerdos recientes 💫",
-            },
-      };
-    }, [eventosOrdenados]);
   const cardsTop = eventosOrdenados.filter(
     (e) =>
       e.titulo !== recuerdoHoy?.titulo &&
@@ -81,28 +59,19 @@ export default function Timeline() {
   const cardsBottom = cardsTop.slice(4);
 
   return (
-    <div className="min-h-screen bg-[#070707] text-white overflow-hidden">
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-fuchsia-500/10 blur-[180px] rounded-full"></div>
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 blur-[180px] rounded-full"></div>
-      </div>
+    <div className="min-h-screen bg-[#0d0d10] text-[#d4d4d8] overflow-hidden">
       <Navbar />
       <div className="relative z-10 px-4 md:px-8 py-6">
+        {/* Buscador */}
         <div className="max-w-md mb-10">
-          <div
-            className="
-              flex items-center gap-3
-              bg-white/[0.04]
-              border border-white/10
-              rounded-2xl
-              px-5 py-4
-              backdrop-blur-xl
-            "
-          >
-            <Search
-              size={18}
-              className="text-white/40"
-            />
+          <div className="
+            flex items-center gap-3
+            bg-[#121215]
+            border border-[#252528]
+            rounded-xl
+            px-5 py-3.5
+          ">
+            <Search size={18} className="text-[#52525b]" />
             <input
               type="text"
               placeholder="Buscar un recuerdo..."
@@ -110,188 +79,133 @@ export default function Timeline() {
                 bg-transparent
                 outline-none
                 w-full
-                text-white
-                placeholder:text-white/30
+                text-[#d4d4d8]
+                placeholder:text-[#52525b]
               "
               value={busqueda}
-              onChange={(e) =>
-                setBusqueda(e.target.value)
-              }
+              onChange={(e) => setBusqueda(e.target.value)}
             />
           </div>
         </div>
+
+        {/* Hero principal */}
         {recuerdoHoy && (
-          <section
-            className="
-              rounded-[40px]
-              overflow-hidden
-              bg-[#141414]
-              border border-white/10
-              min-h-[700px]
-              grid
-              grid-cols-1
-              xl:grid-cols-[1.1fr_0.8fr]
-            "
-          >
-            <div className="relative p-6 md:py-25 flex flex-col justify-between">
-              <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-500/10 via-transparent to-cyan-500/10"></div>
+          <section className="
+            rounded-2xl
+            overflow-hidden
+            bg-[#121215]
+            border border-[#252528]
+            min-h-[700px]
+            grid
+            grid-cols-1
+            xl:grid-cols-[1.1fr_0.8fr]
+          ">
+            <div className="relative p-6 md:py-20 flex flex-col justify-between">
               <div className="relative z-10 flex items-center justify-between">
-                <div
-                  className="
-                    px-4 py-2
-                    rounded-full
-                    bg-white/5
-                    border border-white/10
-                    backdrop-blur-xl
-                    flex items-center gap-2
-                    w-fit
-                  "
-                >
-                  <Sparkles
-                    size={15}
-                    className="text-fuchsia-300"
-                  />
-                  <span className="text-sm">
-                    Hoy ❤️
-                  </span>
+                <div className="
+                  px-3.5 py-1.5
+                  rounded-full
+                  bg-[#0d0d10]
+                  border border-[#252528]
+                  flex items-center gap-2
+                  w-fit
+                ">
+                  <Sparkles size={14} className="text-[#71717a]" />
+                  <span className="text-xs text-[#a1a1aa] font-mono">Hoy ❤️</span>
                 </div>
-                  <p className="text-white/40 text-xl">
-                    {new Date().toLocaleDateString("es-CO")}
-                  </p>
+                <p className="text-[#52525b] text-sm font-mono">
+                  {new Date().toLocaleDateString("es-CO")}
+                </p>
               </div>
+
               <div className="relative z-10 mt-8">
-                <p
-                  className="
-                    text-fuchsia-300
-                    uppercase
-                    tracking-[4px]
-                    text-xs
-                    mb-3
-                  "
-                >
+                <p className="text-[#71717a] uppercase tracking-[3px] text-xs font-mono mb-3">
                   Nuestra historia
                 </p>
 
-                <h1
-                  className="
-                    text-5xl
-                    md:text-7xl
-                    font-black
-                    leading-[0.95]
-                    max-w-3xl
-                  "
-                >
+                <h1 className="
+                  text-4xl
+                  md:text-6xl
+                  font-serif
+                  font-bold
+                  text-[#d4d4d8]
+                  leading-tight
+                  max-w-3xl
+                ">
                   Cada recuerdo
                   <br />
                   cuenta nuestra
                   <br />
-                  historia ✨
+                  historia ❤️‍🩹
                 </h1>
 
-                <p
-                  className="
-                    text-white/50
-                    mt-5
-                    max-w-xl
-                    leading-relaxed
-                    text-sm md:text-base
-                  "
-                >
+                <p className="text-[#71717a] mt-5 max-w-xl leading-relaxed text-sm md:text-base">
                   Un espacio donde cada foto guarda un
                   momento especial, cada fecha revive un
                   sentimiento y cada recuerdo sigue vivo
                   con nosotros.
                 </p>
+
                 <button
-                  onClick={() =>
-                    setModal(recuerdoHoy)
-                  }
+                  onClick={() => setModal(recuerdoHoy)}
                   className="
                     mt-5
-                    px-6 py-4
-                    rounded-2xl
-                    bg-white/70
-                    text-black
-                    font-semibold
+                    px-6 py-3.5
+                    rounded-xl
+                    bg-[#1c1c1f] hover:bg-[#252528]
+                    border border-[#3f3f46]
+                    text-[#d4d4d8]
+                    text-sm
+                    font-medium
                     flex items-center gap-3
-                    hover:scale-105
-                    transition-all duration-300
+                    transition-colors duration-200
                   "
                 >
-                  Ver ultimo recuerdo
-
-                  <ArrowRight size={18} />
+                  Ver último recuerdo
+                  <ArrowRight size={16} />
                 </button>
               </div>
-            <div
-              className="
-                relative z-10
-                mt-3
-                rounded-[30px]
-                overflow-hidden
-                border border-white/10
-                max-w-md
-                group
-                cursor-pointer
-              "
-              onClick={() => setModal(recuerdoHoy)}
-            >
-              <img
-                src={recuerdoHoy.imagen}
-                alt={recuerdoHoy.titulo}
-                className="
-                  w-full
-                  h-[240px]
-                  object-cover
-                  group-hover:scale-105
-                  transition-all duration-700
-                "
-              />
+
               <div
                 className="
-                  absolute inset-0
-                  bg-gradient-to-t
-                  from-black
-                  via-black/20
-                  to-transparent
+                  relative z-10
+                  mt-3
+                  rounded-xl
+                  overflow-hidden
+                  border border-[#252528]
+                  max-w-md
+                  group
+                  cursor-pointer
                 "
-              ></div>
-              <div className="absolute bottom-0 p-5">
-                <p className="text-white/50 text-xs mb-2">
-                  {recuerdoHoy.fecha}
-                </p>
-
-                <h3
-                  className="
-                    text-2xl
-                    font-bold
-                    leading-tight
-                  "
-                >
-                  {recuerdoHoy.titulo}
-                </h3>
+                onClick={() => setModal(recuerdoHoy)}
+              >
+                <img
+                  src={recuerdoHoy.imagen}
+                  alt={recuerdoHoy.titulo}
+                  className="w-full h-[240px] object-cover group-hover:scale-105 transition-all duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 p-5">
+                  <p className="text-[#71717a] text-xs font-mono mb-1">{recuerdoHoy.fecha}</p>
+                  <h3 className="text-xl font-serif font-bold text-[#d4d4d8] leading-tight">
+                    {recuerdoHoy.titulo}
+                  </h3>
+                </div>
               </div>
             </div>
-            </div>
-            <div
-              className="
-                bg-[#0d0d0d]
-                p-5
-                border-l border-white/10
-                flex flex-col gap-5
-              "
-            >
+
+            {/* Panel lateral derecho */}
+            <div className="bg-[#0d0d10] p-5 border-l border-[#252528] flex flex-col gap-4">
               {recuerdoAnoPasado && (
                 <div
-                  onClick={() =>
-                    setModal(recuerdoAnoPasado)
-                  }
+                  onClick={() => setModal(recuerdoAnoPasado)}
                   className="
                     relative
-                    rounded-[30px]
+                    rounded-xl
                     overflow-hidden
                     flex-1
-                    min-h-[300px]
+                    min-h-[280px]
+                    border border-[#252528]
                     cursor-pointer
                     group
                   "
@@ -299,60 +213,45 @@ export default function Timeline() {
                   <img
                     src={recuerdoAnoPasado.imagen}
                     alt={recuerdoAnoPasado.titulo}
-                    className="
-                      w-full h-full
-                      object-cover
-                      group-hover:scale-105
-                      transition-all duration-700
-                    "
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent"></div>
-                  <div className="absolute bottom-0 p-6">
-                    <p className="text-white/50 text-sm mb-2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 p-5">
+                    <p className="text-[#71717a] text-xs font-mono mb-1">
                       {recuerdoAnoPasado.etiqueta}
                     </p>
-
-                    <h2 className="text-3xl font-bold leading-tight">
+                    <h2 className="text-2xl font-serif font-bold text-[#d4d4d8] leading-tight">
                       {recuerdoAnoPasado.titulo}
                     </h2>
                   </div>
                 </div>
               )}
-              <div className="grid grid-cols-2 gap-4">
+
+              {/* Mini cards 2x2 */}
+              <div className="grid grid-cols-2 gap-3">
                 {cardsTop.slice(0, 4).map((e, i) => (
                   <div
                     key={i}
                     onClick={() => setModal(e)}
                     className="
                       relative
-                      rounded-[25px]
+                      rounded-xl
                       overflow-hidden
+                      border border-[#252528]
                       cursor-pointer
                       group
-                      h-[180px]
+                      h-[160px]
                     "
                   >
                     <img
                       src={e.imagen}
                       alt={e.titulo}
-                      className="
-                        w-full h-full
-                        object-cover
-                        group-hover:scale-110
-                        transition-all duration-700
-                      "
+                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                     />
-
-                    <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-
-                    <div className="absolute bottom-0 p-4">
-                      <p className="text-[10px] text-white/50 mb-1">
-                        {e.fecha}
-                      </p>
-
-                      <h3 className="text-sm font-semibold line-clamp-2">
-                        {e.titulo}
-                      </h3>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-0 p-3">
+                      <p className="text-[10px] text-[#71717a] font-mono mb-0.5">{e.fecha}</p>
+                      <h3 className="text-xs font-medium text-[#d4d4d8] line-clamp-2">{e.titulo}</h3>
                     </div>
                   </div>
                 ))}
@@ -360,61 +259,40 @@ export default function Timeline() {
             </div>
           </section>
         )}
+
+        {/* Galería inferior */}
         <section className="mt-16">
-          <div className="mb-8">
-            <p className="text-fuchsia-300 text-sm uppercase tracking-[4px]">
+          <div className="mb-6">
+            <p className="text-[#52525b] text-xs uppercase tracking-[3px] font-mono">
               Recuerdos
             </p>
-
-            <h2 className="text-4xl font-black mt-2">
-              Nuestra galería ❤️‍🩹​
+            <h2 className="text-3xl font-serif font-bold text-[#d4d4d8] mt-1">
+              Nuestra galería ❤️‍🩹
             </h2>
           </div>
 
-          <div
-            className="
-              grid
-              grid-cols-1
-              sm:grid-cols-2
-              xl:grid-cols-4
-              gap-6
-            "
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
             {cardsBottom.map((e, i) => (
-              <div
-                key={i}
-                onClick={() => setModal(e)}
-                className="group cursor-pointer"
-              >
-                <div
-                  className="
-                    relative
-                    rounded-[30px]
-                    overflow-hidden
-                    bg-white/[0.03]
-                    border border-white/10
-                  "
-                >
+              <div key={i} onClick={() => setModal(e)} className="group cursor-pointer">
+                <div className="
+                  relative
+                  rounded-xl
+                  overflow-hidden
+                  bg-[#121215]
+                  border border-[#252528]
+                  hover:border-[#3f3f46]
+                  transition-colors duration-300
+                ">
                   <div className="overflow-hidden">
                     <img
                       src={e.imagen}
                       alt={e.titulo}
-                      className="
-                        w-full
-                        h-[320px]
-                        object-cover
-                        group-hover:scale-110
-                        transition-all duration-700
-                      "
+                      className="w-full h-[300px] object-cover group-hover:scale-105 transition-all duration-500"
                     />
                   </div>
-
-                  <div className="p-5">
-                    <p className="text-fuchsia-300/70 text-xs mb-2">
-                      {e.fecha}
-                    </p>
-
-                    <h3 className="text-lg font-semibold leading-snug">
+                  <div className="p-4">
+                    <p className="text-[#52525b] font-mono text-xs mb-1">{e.fecha}</p>
+                    <h3 className="text-base font-serif font-semibold text-[#d4d4d8] leading-snug">
                       {e.titulo}
                     </h3>
                   </div>
@@ -424,6 +302,7 @@ export default function Timeline() {
           </div>
         </section>
       </div>
+
       <Modal
         visible={modal !== null}
         titulo={modal?.titulo}
