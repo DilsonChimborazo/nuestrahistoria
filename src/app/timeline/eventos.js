@@ -82,7 +82,7 @@
       Ese año no terminó como lo habíamos imaginado. Nos enfermamos, nos quedamos sin dinero y tuvimos que abandonar una vida que apenas estábamos comenzando a construir. Sin embargo, también fue una etapa en la que estuvimos muy unidos, en la que conocimos nuestros límites y descubrimos que, incluso cuando todo parece complicarse, siempre queda algo por lo que vale la pena seguir intentando.
       Porque, al final, aquella historia no se trataba solamente de un trabajo, de una ciudad o de las dificultades económicas. Se trataba de tres personas que habían decidido empezar de nuevo, que soñaban con una vida mejor y que, a pesar de no tener todas las respuestas, hicieron lo posible por salir adelante.
       Y aunque tuvimos que regresar, esa etapa siempre formará parte de nuestra historia. Una historia que no habla de una derrota, sino de lo que significa intentarlo, resistir y aprender que, en ocasiones, volver al punto de partida también es una manera de seguir avanzando.
-      y una cosa mas, nunca olvidaremos aquel dia que solo comimos pasta con sal y color y aun asi fuimos agradecidos por tener algo "SOLO COMIMOS SPAGUETITOS" contigo hemos vidido de todo, lo bueno, lo malo y lo peor, pero siempre juntos`,
+      y una cosa mas, nunca olvidaremos aquel dia que solo comimos pasta con sal y color y aun asi fuimos agradecidos por tener algo "SOLO COMIMOS SPAGUETITOS" contigo hemos vivido de todo, lo bueno, lo malo y lo peor, pero siempre juntos`,
       imagen: "/img17.jpeg",
       fecha: "01/08/2022"
     },
